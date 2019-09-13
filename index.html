@@ -5,25 +5,96 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <title>Word Guessing Game</title>
-       
 </head>
+    
     <body>
-        <div id="wrapper">
-            <p class="hint"></p>
-            <p class="testing"></p>
-            <div id="word-lines"></div>
-            <input id="input-field" type="text" maxlength="1" autofocus autocomplete="off">
-            <button id="button-guess">Guess</button>
-            <button id="button-hint">Hint</button>
-            <p id="lives"></p>
-            <div id="wrong-letters">
-                <p>Wrong letters</p>
-                <h6 class="wrong"></h6>
+
+        <div class="container">
+    
+        
+          <div class='jumbotron'>
+            <div class='container'>
+              <h1>Coding Boot Camp - Word Guess</h1>
+              <h2>Guess one of the twelve month oh the year !</h2>
+              <small>Click any letter to begin...</small>
             </div>
-            <button id="button-new">New Game</button>
-            <script type="text/javascript" src="game.js"></script>
+          </div>
+    
+          
+          <div class="row">
+            <div class="col-lg-12">
+    
+              
+              <div class="card card-default">
+                <div class="card-header">
+                  <h3 class="card-title"><strong>Word to Guess</strong></h3>
+                </div>
+    
+                <div class="card-body">
+    
+                  <h3 id="word-blanks">_ _ _ _ _ _ _ _ _ </h3>
+    
+                </div>
+    
+              </div>
+    
+              
+              <div class="card card-default">
+                <div class="card-body">
+    
+     
+                  <strong>Wrong Guesses: </strong> <span id="wrong-guesses"></span>
+    
+                </div>
+              </div>
+    
+              
+              <div class="card card-default">
+                <div class="card-body">
+    
+                  
+                  <strong>Guesses Left: </strong> <span id="guesses-left">10</span>
+    
+                </div>
+    
+              </div>
+    
+              
+              <div class="card card-default">
+    
+                <div class="card-body">
+    
+                
+                  <strong>Wins: </strong> <span id="win-counter">0</span>
+    
+                </div>
+    
+              </div>
+    
+              
+              <div class="card card-default">
+                <div class="card-body">
+    
+                   
+                  <strong>Losses: </strong> <span id="loss-counter">0</span>
+    
+                </div>
+    
+              </div>
+    
+            </div>
+    
+          </div>
+    
         </div>
-    </body>
-</html>
+    
+        <script src="game.js"></script>
+    
+      </body>
+    
+    </html>
+    
+    
